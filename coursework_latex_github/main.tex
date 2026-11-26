@@ -1,0 +1,98 @@
+% !TEX program = xelatex
+\documentclass[14pt,a4paper,oneside]{extreport}
+\input{preamble.tex}
+
+% Данные титульного листа. При необходимости измените их здесь.
+\newcommand{\StudentName}{Жаринов К. С.}
+\newcommand{\StudentGroup}{Д-Э 21-24}
+\newcommand{\StudentCourse}{3 курса}
+\newcommand{\CourseTitle}{Разработка методов машинного обучения для генерации названий растений и аграрных объектов виртуальных миров}
+\newcommand{\InstituteName}{Институт экономики и управления}
+\newcommand{\DepartmentName}{Кафедра статистики и кибернетики}
+\newcommand{\DirectionName}{09.03.02 Информационные системы и технологии}
+\newcommand{\ProfileName}{Большие данные и машинное обучение}
+
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+\begin{minipage}[c]{0.15\textwidth}
+\centering
+\IfFileExists{figures/university_logo.png}{\includegraphics[width=1.75cm]{university_logo.png}}{}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.83\textwidth}
+\centering
+\fontsize{7.5}{8.8}\selectfont
+МИНИСТЕРСТВО СЕЛЬСКОГО ХОЗЯЙСТВА РОССИЙСКОЙ ФЕДЕРАЦИИ\\
+ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ\\
+«РОССИЙСКИЙ ГОСУДАРСТВЕННЫЙ АГРАРНЫЙ УНИВЕРСИТЕТ -- МСХА имени К. А. ТИМИРЯЗЕВА»\\
+(ФГБОУ ВО РГАУ -- МСХА имени К. А. Тимирязева)
+\end{minipage}
+\end{center}
+\vspace{0.12cm}
+\hrule height 0.5pt
+\vspace{0.42cm}
+\begin{center}
+{\fontsize{12}{14}\selectfont \InstituteName\\[0.08cm]
+\DepartmentName\par}
+\vspace{0.35cm}
+{\fontsize{12}{14}\selectfont Направление: \DirectionName\\
+Направленность:\\
+\ProfileName\par}
+\vspace{0.55cm}
+{\bfseries\fontsize{17}{20}\selectfont КУРСОВОЙ ПРОЕКТ\par}
+\end{center}
+\vspace{0.18cm}
+{\fontsize{12}{14}\selectfont на тему: «\CourseTitle»\par}
+\vspace{0.35cm}
+\begin{flushright}
+\begin{minipage}[t]{0.53\textwidth}
+\fontsize{10.5}{12.2}\selectfont
+Выполнил:\\
+Студент \StudentCourse{} группы \StudentGroup\\
+\StudentName\par
+\vspace{0.22cm}
+Дата регистрации КП\\
+на кафедре: \rule{5.2cm}{0.4pt}\par
+\vspace{0.22cm}
+Допущен к защите\\
+Руководитель:\par
+\vspace{0.25cm}
+\rule{5.2cm}{0.4pt}\\[-1pt]
+{\fontsize{8.5}{9.5}\selectfont учёная степень, учёное звание, ФИО\par}
+\vspace{0.25cm}
+Члены комиссии:\par
+\vspace{0.12cm}
+\rule{3.65cm}{0.4pt}\hspace{0.18cm}\rule{1.05cm}{0.4pt}\\[-1pt]
+{\fontsize{8}{9}\selectfont учёная степень, учёное звание, ФИО\hspace{0.25cm}подпись\par}
+\vspace{0.12cm}
+\rule{3.65cm}{0.4pt}\hspace{0.18cm}\rule{1.05cm}{0.4pt}\\[-1pt]
+{\fontsize{8}{9}\selectfont учёная степень, учёное звание, ФИО\hspace{0.25cm}подпись\par}
+\vspace{0.12cm}
+\rule{3.65cm}{0.4pt}\hspace{0.18cm}\rule{1.05cm}{0.4pt}\\[-1pt]
+{\fontsize{8}{9}\selectfont учёная степень, учёное звание, ФИО\hspace{0.25cm}подпись\par}
+\vspace{0.25cm}
+{\fontsize{10.5}{12}\selectfont Оценка \rule{4.2cm}{0.4pt}\par}
+\vspace{0.18cm}
+{\fontsize{10.5}{12}\selectfont Дата защиты \rule{3.6cm}{0.4pt}\par}
+\end{minipage}
+\end{flushright}
+\vfill
+\begin{center}{\fontsize{11}{13}\selectfont Москва 2026}\end{center}
+\end{titlepage}
+
+\pagenumbering{arabic}
+\setcounter{page}{2}
+\tableofcontents
+\clearpage
+\input{chapters/introduction.tex}
+\input{chapters/chapter1.tex}
+\input{chapters/chapter2.tex}
+\input{chapters/conclusion.tex}
+\input{chapters/bibliography.tex}
+\input{chapters/appendix_a.tex}
+\input{chapters/appendix_b.tex}
+\input{chapters/appendix_v.tex}
+\input{chapters/appendix_g.tex}
+\input{chapters/appendix_d.tex}
+\end{document}
